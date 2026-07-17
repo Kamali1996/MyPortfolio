@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifact 2 | ML vs DL</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="../../index.html">Kamali Portfolio</a>
+        </div>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Artifacts ▾</a>
+                <div class="dropdown-content">
+                    <a href="../artifact-1/index.html">Artifact 1: Rachel Chatbot</a>
+                    <a href="index.html">Artifact 2: ML vs Deep Learning</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <a href="../../index.html" style="margin-bottom: 2rem; display: inline-block;">&larr; Back to Portfolio</a>
+        
+        <div class="card">
+            <div class="artifact-header">
+                <h2>Artifact 2: Machine Learning vs. Deep Learning in Healthcare QA</h2>
+            </div>
+            
+            <span class="label">Objective</span>
+            <p>To differentiate between traditional Machine Learning and Deep Learning use cases within the healthcare insurance sector, mapping the correct technology to specific data architectures and business needs.</p>
+            
+            <span class="label">Process</span>
+            <p>I analyzed standard business problems in health insurance—member retention and call center transcript analysis. I evaluated both approaches against data structure (structured vs. unstructured text), computational cost, and the necessity for explainability in business decisions to formulate technical recommendations.</p>
+            
+            <span class="label">Tools & Concepts</span>
+            <p>Analytical Reasoning, Healthcare Domain Expertise, NLP/Transformer Frameworks (BERT), Traditional ML Algorithms (SVM, Logistic Regression, Decision Trees).</p>
+            
+            <span class="label">Value Proposition</span>
+            <p>Demonstrates my ability as a Lead QA Engineer to assess business requirements, evaluate underlying data architectures, and recommend the correct AI model methodology to optimize operational costs and improve member experience.</p>
+
+            <!-- Content Area -->
+            <h3 style="margin-top: 3rem;">Architectural Analysis</h3>
+            <p>As a Lead QA Engineer in the healthcare insurance industry, I can relate both standard Machine Learning and Deep Learning technologies to several real-world business problems.</p>
+            
+            <div class="grid-2">
+                
+                <!-- Machine Learning Box -->
+                <div class="comparison-box">
+                    <h3>Machine Learning: Customer Churn & Retention</h3>
+                    <p><strong>The Scenario:</strong> A healthcare insurance company wants to predict which members are likely to renew their health plans next year and which members are likely to switch to another insurer.</p>
+                    <p>The model analyzes structured data such as member age, plan type, premium amount, claim history, customer service interactions, and enrollment duration to output a probability of retention.</p>
+                    <p><strong>Why ML is Suitable:</strong> The data is highly structured, and the important features are already known. Algorithms such as Support Vector Machine (SVM), Decision Trees, or Logistic Regression can learn from historical data efficiently.</p>
+                    <p><strong>Why DL is Overkill:</strong> Deep learning is not the best choice because the data consists mainly of structured fields. Traditional ML models provide accurate predictions with less computational cost and are significantly easier for business teams to understand. Because retention strategies require business justification, the explainability of traditional ML is preferred.</p>
+                </div>
+
+                <!-- Deep Learning Box -->
+                <div class="comparison-box">
+                    <h3>Deep Learning: NLP for Care Transcripts</h3>
+                    <p><strong>The Scenario:</strong> A healthcare insurance company receives thousands of customer service calls daily. The company wants to analyze these unstructured call transcripts to identify repeat-call patterns and proactively send interventions before members call again, reducing operating costs by millions.</p>
+                    <p><strong>Why DL is Suitable:</strong> Call transcripts are unstructured text data. Transformer-based Deep Learning NLP models (such as BERT) can automatically understand context, sentiment, intent, and recurring issues within massive conversation logs without manual tagging.</p>
+                    <p><strong>Why Traditional ML Fails Here:</strong> Traditional machine learning is less suitable because it requires significant manual feature engineering. Extracting meaningful patterns, emotions, and intent from raw dialogue using basic ML is difficult and inaccurate. DL automatically learns these complex language patterns.</p>
+                </div>
+
+            </div>
+            
+            <div class="pvp-box" style="margin-top: 2rem; border-radius: 8px; border-left: 6px solid #10b981;">
+                <strong>Conclusion:</strong><br>
+                Both machine learning and deep learning have valuable applications in healthcare insurance. Machine learning is ideal for structured business problems such as predicting member renewals and retention because it is efficient and explainable. Deep learning is more effective for analyzing customer care transcripts because it can understand complex language and identify patterns in unstructured data. Together, these technologies can help healthcare insurers improve member experience, reduce call volumes, increase retention, and make more informed business decisions.
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Kamala Kumari Karuturi.</p>
+    </footer>
+
+</body>
+</html>
