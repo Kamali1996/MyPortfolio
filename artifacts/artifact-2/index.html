@@ -3,83 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artifact 2 | ML vs DL</title>
+    <title>Artifact 2 | Machine Learning vs. Deep Learning</title>
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
 
     <nav>
-        <div class="nav-logo">
-            <a href="../../index.html">Kamali Portfolio</a>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../../index.html">Kamali <span>Portfolio</span></a>
+            </div>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Artifacts <i class="fa-solid fa-chevron-down" style="font-size:0.8rem; margin-left:5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../artifact-1/index.html">Rachel Chatbot</a>
+                        <a href="index.html">ML vs DL Analysis</a>
+                    </div>
+                </li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#">Artifacts ▾</a>
-                <div class="dropdown-content">
-                    <a href="../artifact-1/index.html">Artifact 1: Rachel Chatbot</a>
-                    <a href="index.html">Artifact 2: ML vs Deep Learning</a>
-                </div>
-            </li>
-        </ul>
     </nav>
 
     <div class="container">
-        <a href="../../index.html" style="margin-bottom: 2rem; display: inline-block;">&larr; Back to Portfolio</a>
+        <a href="../../index.html" style="display: inline-block; margin-bottom: 1.5rem; font-weight: 500; font-size: 0.9rem;"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
         
-        <div class="card">
-            <div class="artifact-header">
-                <h2>Artifact 2: Machine Learning vs. Deep Learning in Healthcare QA</h2>
-            </div>
-            
-            <span class="label">Objective</span>
-            <p>To differentiate between traditional Machine Learning and Deep Learning use cases within the healthcare insurance sector, mapping the correct technology to specific data architectures and business needs.</p>
-            
-            <span class="label">Process</span>
-            <p>I analyzed standard business problems in health insurance—member retention and call center transcript analysis. I evaluated both approaches against data structure (structured vs. unstructured text), computational cost, and the necessity for explainability in business decisions to formulate technical recommendations.</p>
-            
-            <span class="label">Tools & Concepts</span>
-            <p>Analytical Reasoning, Healthcare Domain Expertise, NLP/Transformer Frameworks (BERT), Traditional ML Algorithms (SVM, Logistic Regression, Decision Trees).</p>
-            
-            <span class="label">Value Proposition</span>
-            <p>Demonstrates my ability as a Lead QA Engineer to assess business requirements, evaluate underlying data architectures, and recommend the correct AI model methodology to optimize operational costs and improve member experience.</p>
-
-            <!-- Content Area -->
-            <h3 style="margin-top: 3rem;">Architectural Analysis</h3>
-            <p>As a Lead QA Engineer in the healthcare insurance industry, I can relate both standard Machine Learning and Deep Learning technologies to several real-world business problems.</p>
-            
-            <div class="grid-2">
-                
-                <!-- Machine Learning Box -->
-                <div class="comparison-box">
-                    <h3>Machine Learning: Customer Churn & Retention</h3>
-                    <p><strong>The Scenario:</strong> A healthcare insurance company wants to predict which members are likely to renew their health plans next year and which members are likely to switch to another insurer.</p>
-                    <p>The model analyzes structured data such as member age, plan type, premium amount, claim history, customer service interactions, and enrollment duration to output a probability of retention.</p>
-                    <p><strong>Why ML is Suitable:</strong> The data is highly structured, and the important features are already known. Algorithms such as Support Vector Machine (SVM), Decision Trees, or Logistic Regression can learn from historical data efficiently.</p>
-                    <p><strong>Why DL is Overkill:</strong> Deep learning is not the best choice because the data consists mainly of structured fields. Traditional ML models provide accurate predictions with less computational cost and are significantly easier for business teams to understand. Because retention strategies require business justification, the explainability of traditional ML is preferred.</p>
-                </div>
-
-                <!-- Deep Learning Box -->
-                <div class="comparison-box">
-                    <h3>Deep Learning: NLP for Care Transcripts</h3>
-                    <p><strong>The Scenario:</strong> A healthcare insurance company receives thousands of customer service calls daily. The company wants to analyze these unstructured call transcripts to identify repeat-call patterns and proactively send interventions before members call again, reducing operating costs by millions.</p>
-                    <p><strong>Why DL is Suitable:</strong> Call transcripts are unstructured text data. Transformer-based Deep Learning NLP models (such as BERT) can automatically understand context, sentiment, intent, and recurring issues within massive conversation logs without manual tagging.</p>
-                    <p><strong>Why Traditional ML Fails Here:</strong> Traditional machine learning is less suitable because it requires significant manual feature engineering. Extracting meaningful patterns, emotions, and intent from raw dialogue using basic ML is difficult and inaccurate. DL automatically learns these complex language patterns.</p>
-                </div>
-
-            </div>
-            
-            <div class="pvp-box" style="margin-top: 2rem; border-radius: 8px; border-left: 6px solid #10b981;">
-                <strong>Conclusion:</strong><br>
-                Both machine learning and deep learning have valuable applications in healthcare insurance. Machine learning is ideal for structured business problems such as predicting member renewals and retention because it is efficient and explainable. Deep learning is more effective for analyzing customer care transcripts because it can understand complex language and identify patterns in unstructured data. Together, these technologies can help healthcare insurers improve member experience, reduce call volumes, increase retention, and make more informed business decisions.
-            </div>
-
+        <div class="artifact-header">
+            <h1>Machine Learning vs. Deep Learning</h1>
         </div>
+
+        <!-- NEW COLORFUL SECTIONS -->
+        <div class="strict-section section-intro">
+            <h2><i class="fa-solid fa-circle-info"></i> Introduction & Overview</h2>
+            <p>A strategic architectural analysis and technical framework comparing traditional Machine Learning (ML) against Deep Learning (DL) specifically tailored for the Healthcare Insurance domain.</p>
+        </div>
+
+        <div class="strict-section section-objective">
+            <h2><i class="fa-solid fa-bullseye"></i> Objective</h2>
+            <p>To establish a clear evaluation framework that differentiates between ML and DL use cases. The goal is to help individuals map the correct technology to specific data architectures (structured vs. unstructured) and business needs without over-engineering solutions.</p>
+        </div>
+
+        <div class="strict-section section-process">
+            <h2><i class="fa-solid fa-list-check"></i> Process</h2>
+            <p>I conducted a deep comparative analysis of standard health insurance business problems—specifically member retention (churn) and call center transcript analysis. I evaluated both technological approaches against three critical pillars: data structure dependency, computational cost, and the strict regulatory need for model explainability in business decisions.</p>
+        </div>
+
+        <div class="strict-section section-tools">
+            <h2><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Methodologies</h2>
+            <p>Generative AI &mdash; Gemini, Data Architecture Analysis, Algorithm Efficiency Profiling & Healthcare Domain Logic Modeling</p>
+        </div>
+
+        <div class="strict-section section-value">
+            <h2><i class="fa-solid fa-gem"></i> Value Proposition</h2>
+            <p>This evaluation allows product, Quality Assurance, and engineering teams to make cost-effective, highly accurate technology choices. By understanding the critical need for model explainability in certain contexts versus the raw pattern recognition power needed in others, organizations can deploy the right AI tool for the exact right problem, avoiding unnecessary computational costs.</p>
+        </div>
+
+        <!-- MACHINE LEARNING SECTION -->
+        <h2 class="section-title">Machine Learning</h2>
+        <p>Traditional Machine Learning focuses on the development of algorithms that parse datasets, discover mathematical patterns, and construct predictive rules without explicit hard-coding. It relies on deterministic statistics and domain-driven feature engineering, proving highly efficient for processing structured, alphanumeric data entries.</p>
+        
+        <div class="infographic-container">
+            <img src="ml_types_infograph.png" alt="Machine Learning Types and Application Areas Infographic">
+        </div>
+
+        <h3 style="color: var(--secondary); margin-top: 2rem; margin-bottom: 1rem;">Machine Learning Types Comparison Table</h3>
+        <div class="table-wrapper">
+            <table class="rich-table">
+                <thead>
+                    <tr>
+                        <th>ML Category</th>
+                        <th>Core Operational Focus</th>
+                        <th>Data Requirement</th>
+                        <th>Target Objective</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Supervised Learning</strong></td>
+                        <td>Maps inputs to outputs based on historical, annotated training examples.</td>
+                        <td>Labeled data points</td>
+                        <td>Classification and continuous value regression.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Unsupervised Learning</strong></td>
+                        <td>Identifies intrinsic clusters, distributions, and structures within data without external guidance.</td>
+                        <td>Unlabeled data points</td>
+                        <td>Data segmentation, clustering, and dimensionality reduction.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reinforcement Learning</strong></td>
+                        <td>Trains software agents to execute optimal decisions sequentially by evaluating system penalties and rewards.</td>
+                        <td>State-action-reward loops</td>
+                        <td>Behavior optimization and dynamic strategy execution.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- INTERACTIVE SIDE-BY-SIDE ALGORITHM TABS -->
+        <h3 style="color: var(--secondary); margin-top: 2.5rem; margin-bottom: 1rem;">Core Algorithm Deep-Dive</h3>
+        <div class="tabs-container">
+            <div class="tab-headers">
+                <button class="tab-button active" onclick="switchTab(event, 'supervised-tab')">Supervised Algorithms</button>
+                <button class="tab-button" onclick="switchTab(event, 'unsupervised-tab')">Unsupervised Algorithms</button>
+                <button class="tab-button" onclick="switchTab(event, 'reinforcement-tab')">Reinforcement Frameworks</button>
+            </div>
+            
+            <!-- Supervised Tab -->
+            <div id="supervised-tab" class="tab-panel active">
+                <div class="grid-2">
+                    <div class="content-card">
+                        <h3 style="margin-bottom: 5px;"><i class="fa-solid fa-calculator"></i> Support Vector Machines (SVM)</h3>
+                        <span class="model-badge badge-supervised">Supervised ML</span>
+                        <div class="algo-details">
+                            <div class="algo-section">
+                                <span class="algo-label">Description</span>
+                                <p>Projects data vectors into a high-dimensional space to compute an optimal separating hyperplane that maximizes the margin separating distinct binary classifications.</p>
+                            </div>
+                            <div class="algo-section">
+                                <span class="algo-label">Applications</span>
+                                <p>High-dimensional classification challenges, fraud verification pipelines, and medical status classification based on composite lab values.</p>
+                            </div>
+                            <div class="algo-section">
+                                <span class="algo-label">Demerits</span>
+                                <p>Does not scale smoothly to exceptionally massive datasets; exhibits high sensitivity to background noise and overlapping feature spaces.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h3 style="margin-bottom: 5px;"><i class="fa-solid fa-network-wired"></i> Random Forest</h3>
+                        <span class="model-badge badge-supervised">Supervised ML</span>
+                        <div class="algo-details">
+                            <div class="algo-section">
+                                <span class="algo-label">Description</span>
+                                <p>An ensemble model that constructs an ecosystem of diverse, un-correlated decision trees at training time, leveraging bootstrap aggregating to calculate an optimized consensus output.</p>
+                            </div>
+                            <div class="algo-section">
+                                <span class="algo-label">Applications</span>
+                                <p>Risk profiling, customer churn modeling, and continuous insurance premium estimation.</p>
+                            </div>
+                            <div class="algo-section">
+                                <span class="algo-label">Demerits</span>
+                                <p>High structural complexity demands notable memory footprints; slightly less interpretative than a singular, standalone decision tree.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Unsupervised Tab -->
+            <div id="unsupervised-tab" class="tab-panel">
+                <div class="grid-2">
+                    <div class="content-card">
+                        <h3 style="margin-bottom: 5px;"><i class="fa-solid fa-chart-pie"></i> K-Means Clustering</h3>
+                        <span class="model-badge badge-unsupervised">Unsupervised ML</span>
+                        <div class="algo-details">
+                            <div class="algo-section">
+                                <span class="algo-label">Description</span>
+                                <p>Partitions a dataset into a pre-allocated number of geometric clusters by iteratively assigning every data record to its nearest computed centroid using Euclidean distance vectors.</p>
+                            </div>
+                            <div class="algo-section">
+                                <span class="algo-label">Applications</span>
+                                <p>Demographics segmentation, regional resource mapping, and identifying anomalous outlier insurance claims.</p>
+                            </div>
+                            <div class="algo-section">
+                                <span class="algo-label">Demerits</span>
+                                <p>Requires a fixed parameter definition ahead of time; highly susceptible to skewing from geographic outliers or improper initial centroid seeds.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h3 style="margin-bottom: 5px;"><i class="fa-solid fa-compress"></i> Principal Component Analysis (PCA)</h3>
+                        <span class="model-badge badge-unsupervised">Unsupervised ML</span>
+                        <div class="algo-details">
+                            <div class="algo-section">
+                                <span class="algo-label">Description</span>
+                                <p>An orthogonal linear transformation that maps multi-variate features into a lower-dimensional subspace, preserving the absolute maximum amount of variance possible.</p>
+                            </div>
+                            <div class="algo-section">
+                                <span class="algo-label">Applications</span>
+                                <p>High-dimensional database compression, and preprocessing steps to eliminate multicollinearity before model execution.</p>
+                            </div>
+                            <div class="algo-section">
+                                <span class="algo-label">Demerits</span>
+                                <p>Transformed components become abstract linear combinations, severely hindering direct human business interpretability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reinforcement Tab -->
+            <div id="reinforcement-tab" class="tab-panel">
+                <div class="grid-2">
+                    <div class="content-card">
+                        <h3 style="margin-bottom: 5px;"><i class="fa-solid fa-chess-knight"></i> Q-Learning</h3>
+                        <span class="model-badge badge-reinforcement">Reinforcement ML</span>
+                        <div class="algo-details">
+                            <div class="algo-section">
+                                <span class="algo-label">Description</span>
+                                <p>A model-free, value-based policy algorithm that computes an array of optimal action values (Q-values) to map out maximum cumulative rewards across states over time.</p>
+                            </div>
+                            <div class="algo-section">
+                                <span class="algo-label">Applications</span>
+                                <p>Dynamic price scaling engines, real-time logistics optimization, and automated test script traversal paths.</p>
+                            </div>
+                            <div class="algo-section">
+                                <span class="algo-label">Demerits</span>
+                                <p>Susceptible to severe performance decay and memory overflow when dealing with immense state-action arrays.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h3 style="margin-bottom: 5px;"><i class="fa-solid fa-route"></i> Markov Decision Processes (MDP)</h3>
+                        <span class="model-badge badge-reinforcement">Reinforcement ML</span>
+                        <div class="algo-details">
+                            <div class="algo-section">
+                                <span class="algo-label">Description</span>
+                                <p>A discrete-time mathematical formalization for modeling structural decisions where systemic outcomes are driven partly by agent choice and partly by environmental probabilities.</p>
+                            </div>
+                            <div class="algo-section">
+                                <span class="algo-label">Applications</span>
+                                <p>Simulating longitudinal operational sequences, analyzing multi-stage patient therapy pathways over long horizons.</p>
+                            </div>
+                            <div class="algo-section">
+                                <span class="algo-label">Demerits</span>
+                                <p>Strictly relies on the property that future states depend solely on current status, which often oversimplifies real-world historic contexts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEEP LEARNING SECTION -->
+        <h2 class="section-title" style="margin-top: 4rem;">Deep Learning</h2>
+        <p>Deep Learning scales machine learning capabilities into the domain of multi-layered Artificial Neural Networks. By flowing signals through high volumes of interconnected, non-linear hidden nodes, these systems automatically optimize feature discovery directly from raw inputs. This architecture eliminates the manual bottleneck of human feature extraction, though it exchanges algebraic explainability for raw computational depth.</p>
+        
+        <div class="infographic-container">
+            <img src="dl_model_types_infograph2.jpeg" alt="Deep Learning Model Architectures and Operational Applications Infographic">
+        </div>
+
+        <h3 style="color: var(--secondary); margin-top: 2rem; margin-bottom: 1rem;">Deep Learning Architecture & Selection Guide</h3>
+        <div class="table-wrapper">
+            <table class="rich-table">
+                <thead>
+                    <tr>
+                        <th>Architecture Type</th>
+                        <th>Core Competency</th>
+                        <th>When to Select This Model</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Convolutional Neural Networks (CNN)</strong></td>
+                        <td>Extracts localized spatial hierarchies from multi-dimensional arrays using weight-sharing kernels.</td>
+                        <td>Select for computer vision tasks, image processing, diagnostic scans, and spatial pattern extraction.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Recurrent Neural Networks (RNN / LSTM)</strong></td>
+                        <td>Preserves sequential context across temporal vectors by maintaining an internal recurrent state memory hook.</td>
+                        <td>Select for time-series parsing, financial trend forecasting, and speech waveform sequencing.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Transformers (BERT / GPT)</strong></td>
+                        <td>Utilizes multi-head self-attention mechanisms to simultaneously weigh semantic dependencies across entire bodies of text.</td>
+                        <td>Select for complex Natural Language Processing, text parsing, contextual intent tracking, and conversational interfaces.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Generative Adversarial Networks (GAN)</strong></td>
+                        <td>Pits a generator and a discriminator network against each other in a zero-sum game to synthesize authentic data distributions.</td>
+                        <td>Select for synthetic image/data generation, privacy anonymization, and balancing sparse datasets.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- MACHINE LEARNING VS DEEP LEARNING MATRIX -->
+        <h2 class="section-title" style="margin-top: 4rem;">Machine Learning vs Deep Learning Matrix</h2>
+        <div class="table-wrapper">
+            <table class="rich-table">
+                <thead>
+                    <tr>
+                        <th>Technical Factor</th>
+                        <th>Traditional Machine Learning (ML)</th>
+                        <th>Deep Learning (DL)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Optimal Data Structure</strong></td>
+                        <td>Highly structured, tabular data (SQL Databases, CSVs, Excel).</td>
+                        <td>Massive, unstructured data sets (Raw Text, Audio, Images).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Feature Engineering</strong></td>
+                        <td>Manual process. Requires human domain expertise to extract data points.</td>
+                        <td>Automatic process. Neural networks inherently learn hidden feature layers.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hardware Requirements</strong></td>
+                        <td>Low to Moderate. Can often be trained on standard CPU environments.</td>
+                        <td>Extremely High. Requires specialized GPUs for matrix multiplication.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Model Explainability</strong></td>
+                        <td>High. Algorithms like Decision Trees offer clear mathematical logic traces.</td>
+                        <td>Low. Functions as a "Black-box" making auditing decisions difficult.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- REAL-WORLD HEALTHCARE APPLICATIONS -->
+        <h2 class="section-title" style="margin-top: 4rem;">Real-World Healthcare Applications</h2>
+        <p>As a Lead Quality Assurance Engineer in the healthcare insurance industry, I can relate both standard Machine Learning and Deep Learning technologies to several real-world business problems.</p>
+
+        <div class="strict-section" style="border-left: 5px solid var(--primary);">
+            <h3 style="color: var(--primary);"><i class="fa-solid fa-chart-line"></i> Machine Learning Example: Customer Churn Prediction - Member Retention</h3>
+            <p>A healthcare insurance company wants to predict which members are likely to renew their health plans next year and which members are likely to switch to another insurer. The model can analyze structured data such as member age, plan type, premium amount, claim history, customer service interactions, and enrollment duration and come up with a probability of member retention.</p>
+            <p>Machine learning is suitable for this problem because the data is structured, and the important features are already known. Algorithms such as Support Vector Machine (SVM), Decision Trees, or Logistic Regression can learn from historical enrollment data and predict the likelihood of a member renewing their plan.</p>
+            <p>Deep learning is not the best choice for this scenario because the data consists mainly of structured fields stored in insurance systems and deep learning will be an over-kill to do the job. Traditional machine learning models can provide accurate predictions with less computational cost and are easier for business teams to understand and explain. Since member retention decisions often require business justification, explainable machine learning models are often preferred.</p>
+        </div>
+
+        <div class="strict-section" style="border-left: 5px solid var(--accent);">
+            <h3 style="color: var(--accent);"><i class="fa-solid fa-headset"></i> Deep Learning Example: NLP for Customer Care Transcript Analysis</h3>
+            <p>A healthcare insurance company receives thousands of customer service calls every day. These calls may relate to claims, benefits, prior authorizations, provider searches, or coverage questions. The company wants to analyze call transcripts to identify repeat-call patterns and proactively send interventions, such as benefit explanations, claim status updates, or personalized communications, before members call again hence reducing the operating cost by millions of dollars.</p>
+            <p>Deep learning is well suited for this use case because call transcripts are unstructured text data. Transformer-based NLP models such as BERT can automatically understand the context, sentiment, intent, and recurring issues within conversations. The model can identify members who are likely to call again and trigger proactive outreach to resolve concerns before they result in another customer service interaction.</p>
+            <p>Traditional machine learning is less suitable because it would require significant manual feature engineering. Extracting meaningful patterns, context, emotions, and intent from thousands of conversation transcripts would be difficult and less accurate. Deep learning can automatically learn these complex language patterns and provide better insights from customer interactions.</p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>Conclusion</h3>
+            <p>Both machine learning and deep learning have valuable applications in healthcare insurance. Machine learning is ideal for structured business problems such as predicting member renewals and retention because it is efficient and explainable. Deep learning is more effective for analyzing customer care transcripts because it can understand complex language and identify patterns in unstructured data. Together, these technologies can help healthcare insurers improve member experience, reduce call volume & costs associated, increase retention, and make more informed business decisions.</p>
+        </div>
+
     </div>
 
     <footer>
         <p>&copy; 2026 Kamala Kumari Karuturi.</p>
+        <p>Contact: k.karuturi@myemail.indwes.edu | LinkedIn: <a href="https://www.linkedin.com/in/kamalikatuturi/">Kamali Karuturi</a></p>
     </footer>
 
+    <!-- Tab Switching Execution Logic Script -->
+    <script>
+        function switchTab(event, tabId) {
+            const panels = document.querySelectorAll('.tab-panel');
+            panels.forEach(panel => panel.classList.remove('active'));
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
 </body>
 </html>

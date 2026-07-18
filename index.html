@@ -3,73 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamali Portfolio | Home</title>
+    <title>Kamali Portfolio | Quality Assurance & SDET</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav>
-        <div class="nav-logo">
-            <a href="index.html">Kamali Portfolio</a>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Kamali <span>Portfolio</span></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Artifacts <i class="fa-solid fa-chevron-down" style="font-size:0.8rem; margin-left:5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="artifacts/artifact-1/index.html">Rachel Chatbot</a>
+                        <a href="artifacts/artifact-2/index.html">ML vs DL Analysis</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#">Artifacts ▾</a>
-                <div class="dropdown-content">
-                    <a href="artifacts/artifact-1/index.html">Artifact 1: Rachel Chatbot</a>
-                    <a href="artifacts/artifact-2/index.html">Artifact 2: ML vs Deep Learning</a>
-                </div>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
     </nav>
 
     <header class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Kamala Kumari Karuturi</h1>
-                <h2>Lead Quality Assurance & SDET</h2>
-                <p>I am a dedicated QA professional specializing in software testing and validation. My focus is on ensuring that complex systems operate reliably, securely, and intuitively for the end-user. I am passionate about integrating emerging technologies, like Generative AI, into development lifecycles while maintaining strict adherence to business logic, safety guardrails, and quality standards.</p>
+                <h2>Quality Assurance & SDET Professional</h2>
+                <p>I am a dedicated Quality Assurance professional specializing in software testing and validation. My core mission is ensuring that complex systems operate reliably, securely, and intuitively for the end-user.</p>
                 
-                <div class="pvp-box">
-                    <strong>Personal Value Proposition:</strong><br>
-                    "As a Quality Assurance and Software Development Engineer in Test (SDET), I help organizations implement robust, secure, and user-friendly technology solutions by bridging the gap between innovative capabilities and comprehensive system validation."
-                </div>
+                <ul class="hero-pillars">
+                    <li><i class="fa-solid fa-check-double"></i> <strong>Validation:</strong> Comprehensive end-to-end software testing.</li>
+                    <li><i class="fa-solid fa-microchip"></i> <strong>Innovation:</strong> Integrating Generative AI into development lifecycles.</li>
+                    <li><i class="fa-solid fa-shield-halved"></i> <strong>Compliance:</strong> Strict adherence to business logic and safety guardrails.</li>
+                </ul>
             </div>
             <div class="hero-image">
-                <img src="assets/photo2.png" alt="Kamala Kumari Karuturi">
+                <img src="assets/photo2.png" alt="Kamali Karuturi Profile">
             </div>
         </div>
     </header>
 
     <div class="container">
-        <!-- Artifacts Gallery -->
-        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">My Artifacts</h2>
         
-        <div class="grid-2">
-            <!-- Artifact 1 Link -->
-            <a href="artifacts/artifact-1/index.html" style="color: inherit; text-decoration: none;">
-                <div class="card">
-                    <h3 style="color: #0284c7;">Artifact 1: Rachel AI Chatbot</h3>
-                    <p>A fully functional AI assistant prototype built using design thinking to provide conversational support for health insurance benefits, featuring strict PHI guardrails.</p>
-                    <span style="color: #38bdf8; font-weight: bold;">View Artifact →</span>
-                </div>
-            </a>
+        <h2 class="section-title">Core Technical Focus</h2>
+        <div class="grid-4">
+            <div class="content-card" style="text-align: center;">
+                <i class="fa-solid fa-robot" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                <h4 style="margin:0;">Generative AI Guardrails</h4>
+                <p style="font-size: 0.85rem; margin-top: 10px; text-align: center;">Validating LLM outputs and setting strict operational boundaries.</p>
+            </div>
+            <div class="content-card" style="text-align: center;">
+                <i class="fa-solid fa-network-wired" style="font-size: 2rem; color: var(--accent); margin-bottom: 10px;"></i>
+                <h4 style="margin:0;">ML Model Validation</h4>
+                <p style="font-size: 0.85rem; margin-top: 10px; text-align: center;">Testing predictive accuracy and auditing algorithm bias.</p>
+            </div>
+            <div class="content-card" style="text-align: center;">
+                <i class="fa-solid fa-shield-halved" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                <h4 style="margin:0;">Data Privacy (PHI) Testing</h4>
+                <p style="font-size: 0.85rem; margin-top: 10px; text-align: center;">Ensuring strict regulatory and healthcare compliance.</p>
+            </div>
+            <div class="content-card" style="text-align: center;">
+                <i class="fa-solid fa-database" style="font-size: 2rem; color: var(--accent); margin-bottom: 10px;"></i>
+                <h4 style="margin:0;">Test Data Management</h4>
+                <p style="font-size: 0.85rem; margin-top: 10px; text-align: center;">Generating and managing mock datasets for AI training models.</p>
+            </div>
+            <div class="content-card" style="text-align: center;">
+                <i class="fa-solid fa-code-merge" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                <h4 style="margin:0;">CI/CD Pipeline Automation</h4>
+                <p style="font-size: 0.85rem; margin-top: 10px; text-align: center;">Automated continuous testing integrated into deployments.</p>
+            </div>
+            <div class="content-card" style="text-align: center;">
+                <i class="fa-solid fa-language" style="font-size: 2rem; color: var(--accent); margin-bottom: 10px;"></i>
+                <h4 style="margin:0;">NLP Test Automation</h4>
+                <p style="font-size: 0.85rem; margin-top: 10px; text-align: center;">Validating bot intent, context, and sentiment analysis.</p>
+            </div>
+            <div class="content-card" style="text-align: center;">
+                <i class="fa-solid fa-server" style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;"></i>
+                <h4 style="margin:0;">API & Backend Validation</h4>
+                <p style="font-size: 0.85rem; margin-top: 10px; text-align: center;">Testing core data flows and database integrity across services.</p>
+            </div>
+            <div class="content-card" style="text-align: center;">
+                <i class="fa-solid fa-stopwatch" style="font-size: 2rem; color: var(--accent); margin-bottom: 10px;"></i>
+                <h4 style="margin:0;">Performance & Load Testing</h4>
+                <p style="font-size: 0.85rem; margin-top: 10px; text-align: center;">Evaluating system latency and scalability under load.</p>
+            </div>
+        </div>
 
-            <!-- Artifact 2 Link -->
-            <a href="artifacts/artifact-2/index.html" style="color: inherit; text-decoration: none;">
-                <div class="card">
-                    <h3 style="color: #0284c7;">Artifact 2: ML vs. Deep Learning</h3>
-                    <p>A strategic architectural analysis comparing traditional Machine Learning (Churn Prediction) against Deep Learning (NLP Transcript Analysis) within Healthcare Insurance.</p>
-                    <span style="color: #38bdf8; font-weight: bold;">View Artifact →</span>
+        <h2 class="section-title">Professional Value</h2>
+        <div class="grid-2">
+            <div class="content-card">
+                <h3><i class="fa-solid fa-bullseye"></i> Personal Value Proposition</h3>
+                <p>As a Quality Assurance and Software Development Engineer in Test (SDET), I help organizations implement robust, secure, and user-friendly technology solutions by bridging the gap between innovative capabilities and comprehensive system validation, while enforcing strict data governance, automating complex workflows, and ensuring flawless performance across AI integrations.</p>
+            </div>
+            <div class="content-card">
+                <h3><i class="fa-solid fa-users-viewfinder"></i> Target Audience</h3>
+                <p>My target audience includes tech-driven enterprises, healthcare organizations, and product teams looking to implement cutting-edge Generative AI and software solutions. I partner with stakeholders who prioritize rigorous system validation, strict adherence to business logic, and flawless user experiences before deploying products to the market.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">My Artifacts</h2>
+        <div class="grid-2">
+			<a href="artifacts/artifact-1/index.html" class="artifact-link">
+				<div class="artifact-card">
+					<div class="tag-container">
+						<span class="keyword-tag tag-genai">Generative AI</span>
+						<span class="keyword-tag tag-genai">Chatbots</span>
+						<span class="keyword-tag tag-genai">Healthcare Guardrails</span>
+					</div>
+					<h3>Rachel: AI-Powered Health Benefits Assistant</h3>
+					<p>A custom-trained AI chatbot designed as a first-line support tool for health insurance members. It helps users check claim statuses, summarizes Explanation of Benefits (EOB) documents, clarifies complex insurance terminology, and compares policy plans.</p>
+				</div>
+			</a>
+
+            <a href="artifacts/artifact-2/index.html" class="artifact-link">
+                <div class="artifact-card">
+                    <div class="tag-container">
+                        <span class="keyword-tag tag-ml">Machine Learning</span>
+                        <span class="keyword-tag tag-ml">Deep Learning</span>
+                        <span class="keyword-tag tag-ml">Model Architecture</span>
+                    </div>
+                    <h3>Machine Learning vs. Deep Learning</h3>
+                    <p>A strategic architectural analysis comparing traditional Machine Learning against Deep Learning within Healthcare Insurance. This evaluation examines data structures, algorithm efficiency, and the critical need for model explainability.</p>
                 </div>
             </a>
         </div>
     </div>
 
     <footer id="contact">
-        <p>&copy; 2026 Kamala Kumari Karuturi. Built for AIML-500.</p>
+        <p>&copy; 2026 Kamala Kumari Karuturi</p>
         <p>Contact: k.karuturi@myemail.indwes.edu | LinkedIn: <a href="https://www.linkedin.com/in/kamalikatuturi/">Kamali Karuturi</a></p>
     </footer>
 
