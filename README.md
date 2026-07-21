@@ -21,6 +21,11 @@ A strategic architectural analysis comparing traditional Machine Learning and De
 * **Objective:** Differentiate between ML (Customer Churn Prediction) and DL (NLP Transcript Analysis) use cases by mapping the correct technology to specific data architectures and business needs.
 * **QA & Business Focus:** Demonstrates the ability to evaluate underlying data structures (structured vs. unstructured), computational costs, and the necessity for model explainability to recommend the most efficient and secure AI architecture.
 
+### 3. Demystifying Neural Networks
+An interactive conceptual breakdown explaining Neural Networks using a relatable "Pizza Committee" analogy.
+* **Objective:** Translate complex algorithmic mechanics—such as hidden layers, loss functions, and backpropagation—into accessible, non-intimidating concepts for non-technical stakeholders using targeted storytelling methodologies.
+* **Communication & Leadership Focus:** Demonstrates strategic communication and change leadership. By stripping away jargon and establishing a shared understanding of AI architecture, it empowers cross-functional teams to make informed, confident decisions during the software development and QA lifecycle.
+
 ## Technologies & Methodologies Used
 * **Languages:** HTML5, CSS3
 * **AI & Data Tools:** Chatbase, Generative AI Prompt Engineering, NLP/Transformer Frameworks (BERT), Traditional ML Algorithms (SVM, Logistic Regression, Decision Trees)
